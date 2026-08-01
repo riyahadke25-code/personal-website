@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fresh Basket Grocery</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial,sans-serif;
+}
+
+body{
+background:#f5fff2;
+}
+
+header{
+background:#2e7d32;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 50px;
+}
+
+.logo{
+font-size:30px;
+font-weight:bold;
+}
+
+nav a{
+text-decoration:none;
+color:white;
+margin:0 15px;
+font-weight:bold;
+}
+
+.search{
+padding:10px;
+width:220px;
+border:none;
+border-radius:20px;
+}
+
+.hero{
+height:450px;
+background:linear-gradient(rgba(0,0,0,.4),rgba(0,0,0,.4)),
+url("https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=1500&q=80");
+background-size:cover;
+background-position:center;
+display:flex;
+justify-content:center;
+align-items:center;
+color:white;
+text-align:center;
+}
+
+.hero h1{
+font-size:55px;
+}
+
+.hero p{
+font-size:22px;
+margin:20px 0;
+}
+
+.hero button{
+padding:15px 35px;
+border:none;
+background:#43a047;
+color:white;
+font-size:18px;
+border-radius:30px;
+cursor:pointer;
+}
+
+.hero button:hover{
+background:#2e7d32;
+}
+
+.title{
+text-align:center;
+margin:40px 0;
+font-size:35px;
+color:#2e7d32;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+padding:30px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 5px 12px rgba(0,0,0,.15);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-8px);
+}
+
+.card img{
+width:100%;
+height:220px;
+object-fit:cover;
+}
+
+.card h3{
+padding:15px;
+}
+
+.price{
+padding:0 15px;
+color:green;
+font-size:22px;
+font-weight:bold;
+}
+
+.buy{
+margin:15px;
+width:90%;
+padding:12px;
+border:none;
+background:#43a047;
+color:white;
+font-size:16px;
+border-radius:25px;
+cursor:pointer;
+}
+
+.buy:hover{
+background:#2e7d32;
+}
+
+footer{
+background:#2e7d32;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Fresh Basket</div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Vegetables</a>
+<a href="#">Fruits</a>
+<a href="#">Offers</a>
+<a href="#">Contact</a>
+</nav>
+
+<input class="search" type="text" placeholder="Search Vegetables">
+
+</header>
+
+<section class="hero">
+
+<div>
+<h1>Fresh Vegetables Everyday</h1>
+<p>Healthy • Organic • Farm Fresh</p>
+<button>Shop Now</button>
+</div>
+
+</section>
+
+<h2 class="title">Popular Vegetables</h2>
+
+<section class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1540420773420-3366772f4999">
+<h3>Fresh Tomatoes</h3>
+<p class="price">₹40 / kg</p>
+<button class="buy">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518977676601-b53f82aba655">
+<h3>Fresh Carrots</h3>
+<p class="price">₹60 / kg</p>
+<button class="buy">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1615486363973-f79f9c4eab5f">
+<h3>Broccoli</h3>
+<p class="price">₹80 / kg</p>
+<button class="buy">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce">
+<h3>Potatoes</h3>
+<p class="price">₹30 / kg</p>
+<button class="buy">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1518843875459-f738682238a6">
+<h3>Capsicum</h3>
+<p class="price">₹70 / kg</p>
+<button class="buy">Add to Cart</button>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1582515073490-dc6f725f3f15">
+<h3>Onions</h3>
+<p class="price">₹35 / kg</p>
+<button class="buy">Add to Cart</button>
+</div>
+
+</section>
+
+<footer>
+
+<h2>Fresh Basket Grocery Store</h2>
+
+<p>Farm Fresh Vegetables Delivered Daily</p>
+
+<p>© 2026 Fresh Basket. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
